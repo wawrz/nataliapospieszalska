@@ -1,0 +1,440 @@
+        /* ----------------------------------------------------------------
+1. Document Reset
+-----------------------------------------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+/* ----------------------------------------------------------------
+2. Basic Document Styles
+-----------------------------------------------------------------*/
+
+body {
+	/*background-image:url(../TLA/toto.png);*/
+	/*background-color:#FFFFFF*/
+	background-attachment:fixed;
+	z-index:1;
+        width: 960px;
+
+    margin-right:auto;
+    margin-left: auto;
+}
+
+#main {
+	width: 960px;
+    /*padding-top: 120px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------------------------------------
+3. Typography
+-----------------------------------------------------------------*/
+
+a {
+	text-decoration: none;
+    font-family: neutramid;
+    font-size: 25px;
+    text-transform: ;
+}
+
+
+p {
+    font-family: sans;
+    font-size: 17.5px;
+	font-weight: normal;
+	color: #000;
+    word-spacing: 3px;
+    text-shadow: 1px 1px 1px #FFF;
+	text-align:justify;
+	text-indent:0%;
+}
+
+h1 {
+    padding-top:35px ;
+	margin-top:;
+	position:relative;
+	/*top:-120px;*/
+}
+
+h2 {
+    margin-top: 0px;
+    padding-top:0px;
+}
+
+h1, h2{
+    font-family: code;
+    font-size: 62px;
+    color: #000;
+    font:"Intro Cond Light Free";
+    text-transform: uppercase;
+    word-spacing: 3px;
+    border-bottom: 8px #DDD;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: neutramid;
+    font-size: 25px;
+}
+span.przecinek {
+	font-size:36px;
+}
+
+h4 {
+	z-index:-9;
+	color: #EEEEEE;
+    font-family: code;
+    font-size: 23px;
+    color: black;
+    padding-bottom: 1px;
+    border-bottom: 1px #DDD solid;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+span.zmiana-czcionki {
+    font-family: code;
+    color: black;
+    font-size: 23px;
+}
+span.ital1 {
+    font-family: sansreg;
+}
+
+span.ital {
+    font-family: sans-ital;
+}
+span.italic-light {
+    font-family: sans-ital-light;
+}
+
+
+/* ----------------------------------------------------------------
+4. Basic Layout Styles
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+5. Header
+-----------------------------------------------------------------*/
+ 
+
+#header {
+    display: block;
+    position: fixed;
+	
+    width: 960px;
+    height: 160px;
+    left: 50%;
+    margin-left: -480px;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+	margin: 0px, 0px, 340px, -480px;
+	background-color: white;
+	background-image:url(../TLA/toto.png);
+	z-index:3;
+    opacity:1; 
+
+}
+ 
+
+/* ----------------------------------------------------------------
+5. menu
+-----------------------------------------------------------------*/
+ 
+ 
+#primary-menu {
+    position: fixed;
+    float: left;
+    width: 960px;
+    height: 45px;
+    margin: 0px 35px 0 0;
+
+    /*border-bottom: 1px solid #DDD;*/
+
+
+}
+
+
+#primary-menu ul li {
+    display: inline;
+    float: left;
+    margin: 0 5px;
+
+}
+
+#primary-menu ul li a {
+    font-family: code;
+    display: block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #000;
+    text-transform: none;
+    text-shadow: 1px 1px 1px #FFF;
+    padding: 0 8px;
+    border: none;
+    z-index: 10;
+	margin-left:0px;
+}
+
+#primary-menu li ul a {
+	display:compact;
+}
+
+#languages {
+    position: relative;
+}
+
+a:hover,
+#primary-menu ul li a:hover,
+#primary-menu ul li.selectedLava a,
+#primary-menu li:hover a {
+    background-color: #FFF;
+    color: #ff0066;
+    text-decoration: none;
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
+}
+
+#primary-menu li a:focus {
+  text-decoration: none;
+}
+
+#primary-menu .backLava {
+    background-color: #0E8D8D;
+    z-index: 5;
+}
+
+#primary-menu ul:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+    background-color: black;
+}
+
+
+
+
+/* ----------------------------------------------------------------
+6. Main Content
+-----------------------------------------------------------------*/
+
+.wbudowie {
+	text-shadow: 1px 1px 1px #FFF;
+	text-align:center;
+	text-transform:none;
+	letter-spacing:2px;
+	font-size: 24px;
+    font-weight: normal;
+    color: #BBB;
+}
+
+.page-title2 {
+    margin-bottom: 80px;
+
+}
+
+
+#tlo {
+	background: white ;
+}
+
+#column1 {
+	float:left;
+	width: 48%;
+	margin-right: 2%;
+}
+ 
+#column2 {
+	float:left;
+	width: 48%;
+	margin-right: 2%;
+}
+ 
+#column3 {
+	float:left;
+	width: 32%;
+}
+
+
+/* ----------------------------------------------------------------
+7. Galeria
+-----------------------------------------------------------------*/
+
+
+#pomniejszenie img {
+    height: 130.5px;
+    border-radius: 0px;
+    margin-right:2px ;
+    margin-bottom:0px;
+    color: #FFF; 
+    opacity: 0.9; 
+    background-color: #000;
+    position: absolut;
+    font-family: neutramid;
+
+}
+
+#pomniejszenie  a:hover img{
+    height: 130.5px;
+    border-radius: 0px;
+    margin-right:2px ;
+    margin-bottom:0px;
+    opacity: 0.6;
+    background-color: #000;
+}
+
+#pomniejszenie2  img{
+    height: 38px;
+    padding: 0px 0px;
+}
+
+#pomniejszenie3 img {
+    width:62% ;
+    padding-bottom: 20px;
+    float: left;
+    position:relative;
+}
+
+#pomniejszenie4 {
+    width:38% ;
+    padding-bottom: 20px;
+    float: left;
+}
+
+#pomniejszenie5 {
+    margin-left:16px;
+}
+
+#pomniejszenie5 img {
+    height: 56px;
+    margin-top: 10px;
+margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+
+#pomniejszenie5 a:hover img{
+    height: ;
+    opacity: 0.6;
+}
+
+span.roz {
+    color: #ff0066;
+}
+
+span.zmianaczci {
+    font-family: neutramid;
+    text-transform: none;
+    font-size: 25px;
+    color: #777;
+}
+
+.video-start {
+    position: relative;
+	top:-135px;
+}
+.btnl {
+    padding-left: 4px;
+    /*position: absolute;
+    top: 1540px;*/
+} 
+
+.conteiner-last,
+.conteiner {
+    height: 1100px;
+    padding-top: 175px;
+}
+
+.conteiner-last {
+   margin-bottom:  600px;
+}
+
+.wciecie p, .wciecie img{
+    padding-left: 16px;
+    padding-bottom: 10px;
+    margin-top: 19.5px;
+    margin-bottom: 0px;
+    margin-left:5px;
+    margin-right:20px;
+}
+
+.interlinia {
+    line-height:3;
+}
+
+.small {
+    line-height:50%;
+}
+
+.big {
+    line-height:100%;
+}
+
+.row {
+    width:960px;
+}
+
+.col-md-4 {
+    padding-left: 0px;
+}
+
+.col-md-6-a {
+    padding: 0px 0px 0px 0px;
+    width:50%;
+    float: left;
+}
+
+.col-md-6-b {
+    padding: 0px 0px 0px 10px;
+    width:50%;
+    float: left;
+}
+
+.thumbnail {
+    border: none;
+}
+.thumbnail img{
+    border-radius: 4px;
+}
+
+#margin-1 {
+margin-left: 5px;
+margin-right: 8px;
+}
+
+#footer {
+    height: 290px;
+}
+
+p.odstep {
+    line-height:4;
+}

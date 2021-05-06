@@ -1,0 +1,16 @@
+version: '2'
+
+services: 
+  strona-natali-php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: natalia-php-image  
+    ports:
+    - "8020:80"
+    volumes:
+    - .:/var/www/html/
+    - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf:ro
+    - ./php-mail.conf:/usr/local/etc/php/conf.d/mail.ini:ro
+
+
